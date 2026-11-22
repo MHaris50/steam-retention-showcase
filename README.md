@@ -214,6 +214,36 @@ The screenshots and descriptions demonstrate the application's functionality and
 
 ---
 
+
+## 📋 Project Information
+
+| Detail | Information |
+|---|---|
+| Project Name | Steam Hype vs. Player Retention Engine |
+| Project Type | Independent Personal Project |
+| Backend | Django |
+| Programming Language | Python |
+| Database | SQLite |
+| Data Sources | Steam Web API and SteamCharts |
+| Development | Independently developed |
+| Source Code | Maintained in a private GitHub repository |
+| Showcase | Public portfolio repository |
+
+### Project Goals
+
+This project explores how historical and current concurrent player data can be used to analyze the long-term activity of Steam games.
+
+It demonstrates practical experience with:
+
+- Full-stack web application development.
+- External API integration.
+- Historical data collection and processing.
+- Database design and management.
+- Data analysis and visualization.
+- Automated background tasks.
+- Git and GitHub version control.
+
+
 ## 📌 Project Status
 
 The application has a working Django backend, historical data import, automated player collection, retention analysis, and interactive game dashboards.

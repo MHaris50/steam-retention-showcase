@@ -18,25 +18,25 @@ Rather than looking only at a game's launch popularity, the project focuses on a
 
 The landing page introduces Steam Retention and its purpose.
 
-![Home Page](assets/home_page.png)
+![Home Page](assets/home_page.PNG)
 
 ### 2. Games Dashboard
 
 The main dashboard displays tracked games, including CS2, Apex Legends, Dota 2, ELDEN RING, GTA V, and PUBG.
 
-![Games Dashboard](assets/dashboard.png)
+![Games Dashboard](assets/dashboard.PNG)
 
 ### 3. Dashboard Analytics
 
 An additional dashboard view showcasing game activity and retention information.
 
-![Dashboard Analytics](assets/dashboard1.png)
+![Dashboard Analytics](assets/dashboard1.PNG)
 
 ### 4. Individual Game Statistics
 
 The game details page provides historical player-count charts and individual game analysis.
 
-![Game Statistics](assets/game_stats.png)
+![Game Statistics](assets/game_stats.PNG)
 
 ---
 

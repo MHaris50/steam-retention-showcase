@@ -182,6 +182,28 @@ It provides a way to examine player activity using historical data rather than r
 
 ---
 
+
+## 💡 Technical Highlights
+
+- **Multi-source Data Integration:** Combines live player counts from the Steam Web API with historical player data from SteamCharts.
+- **Historical Data Management:** Stores timestamped player snapshots to support comparisons across different time periods.
+- **Automated Background Collection:** Uses Django management commands and Windows Task Scheduler to collect updated player statistics.
+- **Custom Analytical Logic:** Implements activity calculations, percentage changes, trend detection, and rule-based game classifications.
+- **Dynamic Data Visualization:** Presents historical player activity through interactive Chart.js charts.
+- **Scalable Game Tracking:** Uses Steam application IDs to support tracking different Steam games without restricting the application to a fixed list.
+
+## ⚠️ Scope and Limitations
+
+- **Concurrent Players vs. Individual Retention:** The application measures concurrent player activity. It does not track individual users or calculate traditional cohort-based retention.
+- **Historical Data Availability:** Historical analysis depends on the availability and completeness of data from SteamCharts.
+- **Snapshot Frequency:** The detail and accuracy of recent trend analysis depend on how frequently player counts are collected.
+- **Steam Platform Scope:** The analysis focuses on Steam concurrent players and does not represent activity across other gaming platforms.
+- **External Data Dependencies:** Live and historical data collection depends on the availability of external data sources.
+- **Interpretation of Results:** Activity classifications are analytical indicators based on the application's rules. They do not independently explain why a game gains or loses players.
+
+The activity percentage should be interpreted as current concurrent players relative to a historical concurrent-player peak, not as the percentage of original launch players who remain active.
+
+
 ## 🔒 Source Code
 
 This repository is a **public portfolio showcase**.

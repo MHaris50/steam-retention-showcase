@@ -84,6 +84,44 @@ The application follows a data collection and analysis workflow:
 ---
 
 
+## 🏗️ Project Architecture
+
+The application is organized into several components that handle data collection, storage, analysis, and visualization.
+
+### 1. Data Collection Layer
+
+- **Steam Web API:** Retrieves current concurrent player counts.
+- **SteamCharts:** Supplies historical player-count data.
+- **Automated Collection:** A management command collects live player data periodically.
+
+### 2. Data Storage Layer
+
+- **Game Model:** Stores game information, historical peaks, and calculated activity metrics.
+- **PlayerSnapshot Model:** Stores player counts with timestamps and identifies whether records come from live or historical data.
+- **SQLite:** Stores the application's game records and player snapshots.
+
+### 3. Analysis Layer
+
+The analysis services process collected player data to calculate:
+
+- Historical player peaks.
+- Current activity percentages.
+- Seven-day and thirty-day player-count changes.
+- Activity and trend classifications.
+- Overall retention assessments.
+
+### 4. Presentation Layer
+
+- **Django Views:** Retrieve game information and analysis results.
+- **Django Templates:** Render the home page, dashboard, and individual game pages.
+- **Chart.js:** Visualizes historical player activity through interactive charts.
+
+### 5. Automation Layer
+
+Windows Task Scheduler can execute the `collect_players.bat` script at scheduled intervals, allowing the application to collect updated player counts automatically.
+
+
+
 ## 📊 Retention Analysis Methodology
 
 The engine evaluates game activity using historical player data and current concurrent player counts.

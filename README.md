@@ -83,6 +83,57 @@ The application follows a data collection and analysis workflow:
 
 ---
 
+
+## 📊 Retention Analysis Methodology
+
+The engine evaluates game activity using historical player data and current concurrent player counts.
+
+### 1. Activity Analysis
+
+The application compares a game's latest live player count against its historical player peak.
+
+**Activity Percentage = (Current Players / Historical Peak) × 100**
+
+This helps show how much activity a game currently retains relative to its highest recorded player count.
+
+### 2. Player Trend Analysis
+
+The application examines changes in player counts over two periods:
+
+- **7-day change:** Shows recent player activity movement.
+- **30-day change:** Provides a longer-term view of player activity.
+
+These comparisons help identify whether a game is gaining players, remaining relatively stable, or experiencing a decline.
+
+### 3. Activity Classification
+
+Games are categorized according to their activity levels:
+
+- Strong Activity
+- Moderate Activity
+- Low Activity
+- Very Low Activity
+
+This makes it easier to compare games with different player populations.
+
+### 4. Overall Retention Assessment
+
+The engine combines activity levels and player momentum to produce an overall assessment.
+
+The analysis uses the following weighting:
+
+- Activity Level: 70%
+- Player Momentum: 30%
+
+This gives current player activity greater importance while still considering recent player-count trends.
+
+### 5. Historical Visualization
+
+Historical player snapshots are displayed through interactive charts.
+
+These visualizations help examine player-count movements over time and understand how a game's activity has changed since tracking began.
+
+
 ## 🎯 Project Objective
 
 The main objective is to explore the relationship between launch popularity and long-term player retention.
